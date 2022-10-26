@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+	--text-center: center;
+	--flex: flex;
+
+}
+
+html {
+  height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: Inter;
+	/* footer */
+	display: var(--flex);
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+	margin: 5px;
+	border-bottom: groove 2px gray;
+	color: black;
+	text-decoration: none;
+	transition-duration: 250ms;
+	transition-timing-function: ease-out;
+}
+
+a:hover{
+	font-size: 18px;
+	border-bottom-width: 3px; 
+	font-weight: bold;
+	padding: 2px;
+}
+
+.dropdown-btn, h1, h2 {
+	text-align: var(--text-center);
+}
+
+.problem-header-links {
+	display: var(--flex);
+	justify-content: space-around;
+}
+
+.dropdown-btn {
+	display: inline;
+}
+
+.main-content {
+	display: none;
+}
+
+#footer {
+	border-top: solid 2px black;
+	padding: 20px;
+}
+
+#navbar {
+	padding: 10px;
+	height: 5%;
+	border-bottom: solid 2px lightgray;
+}
+
+#group-number {
+	list-style-type: none;
+}
+
+#content {
+  background-color: #e3f2fd;
+  flex: 1;
+  padding: 2px;
+}
+
+
+#back {
+	position: absolute;
+	left: 0;
+}

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}home{% endblock %}
+
+{% block navbar %}
+	{% for link in [{ "link":"home", "text": "Home"}, {"link": "https://github.com/invalid-code/hums-pt", "text":"Github"}] %}
+		{% if link.link[:5] != "https" %}
+			<a href="{{ url_for(link.link) }}">{{ link.text }}</a>
+		{% else %}
+			<a href="{{ link.link }}">{{ link.text }}</a>
+		{% endif %}
+	{% endfor %}
+{% endblock %}
+
+{% block content %}
+<div class="problem-header-links">
+	<a href="/#rational-equations" id="rational-equations-link">Rational Equation</a>
+	<a href="/#rational-inequalities" id="rational-inequalities-link">Rational 	Inequalities</a>
+	<a href="/#word-problems" id="word-problems-link">Word Problems</a>
+</div>
+
+<main></main>
+{% endblock %}
+
+{% block footer %}
+	<div class="group">
+		<ul>
+			<li id="group-number">Group 1</li>
+			<li>Ceniza, John Marco</li>
+			<li>Ceniza, Shawn</li>
+			<li>Evangelista, Jess Mathew P.</li>
+		</ul>
+	</div>
+{% endblock %}
