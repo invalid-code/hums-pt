@@ -1,6 +1,6 @@
 import { problem_1_rational_equation, problem_2_rational_equation } from "./rational_equation.js";
 import { problem_1_rational_inequalities, problem_2_rational_inequalities } from "./rational_inequalities.js";
-import { problem_1_word_problems, problem_2_word_problems, problem_3_word_problems } from "./rational_inequalities.js";
+import { problem_1_word_problems, problem_2_word_problems, problem_3_word_problems } from "./word_problems.js";
 
 $(document).ready(() => {
 
@@ -57,8 +57,8 @@ $(document).ready(() => {
  			<div class='dropdown-btn' id='problem-2-dropdown'>
  				<h3>Problem 2</h3>
  			</div>
-			<div class='dropdown-btn' id='problem-2-dropdown'>
- 				<h3>Problem 2</h3>
+			<div class='dropdown-btn' id='problem-3-dropdown'>
+ 				<h3>Problem 3</h3>
  			</div>
  			`
  		);

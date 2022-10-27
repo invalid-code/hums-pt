@@ -1,0 +1,19 @@
+#problem-2-word-solution-problems-3 {
+	display: grid;
+	grid-template-rows: row: repeat(4, 100px);
+	grid-template-columns: repeat(4, 100px); 
+	border: black 5px solid;
+	width: max-content;
+	margin: auto;
+}
+
+/*#problem-2-word-solution-problems-3 > div + div {*/
+	/*border-bottom: solid 3px black;*/
+	/*border-right: solid 3px black;*/
+	/*border-top: solid 3px #000; */
+/*}*/
+
+#problem-2-word-solution-problems-3 > div {
+	padding: 5px;
+}
+

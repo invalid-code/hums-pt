@@ -15,11 +15,11 @@ export const problem_1_rational_inequalities = async (event) => {
  	`)
  		
  	// write the problem inequalities
-	await katex.render("1+\\frac{x-5}{2}-\\frac{c+3}{5}\\le0", document.getElementById("problem-1-rational-problem-1-rational-inequalities"), { throwOnError: false})
+	await katex.render("1+\\frac{x-5}{2}-\\frac{x+3}{5}\\le0", document.getElementById("problem-1-rational-inequalities"), { throwOnError: false})
 		
 	// solution
 	// part 1
-	await katex.render("(1+\\frac{x-5}{2}-\\frac{c+3}{5}\\le0)10", document.getElementById("problem-1-rational-solution-inequalities"), {	throwOnError: false	})
+	await katex.render("(1+\\frac{x-5}{2}-\\frac{x+3}{5}\\le0)10", document.getElementById("problem-1-rational-solution-inequalities"), {	throwOnError: false	})
 	 
 	// part 2
 	await katex.render("10+(x-5)2-(x+3)2\\le0", document.getElementById("problem-1-rational-solution-inequalities-1"), { throwOnError: false })
@@ -49,9 +49,6 @@ export const problem_1_rational_inequalities = async (event) => {
 
 export const problem_2_rational_inequalities = async (event) => {
 	event.preventDefault();
-	// state = false
-	if (state !== true) {
-		state = true;
 		$("#problem-2-dropdown").html(`
 		<h3>Problem 2</h3>
  		<div id="problem-2-rational-inequalities" style="padding:10px; font-size: 20px;"></div>
@@ -63,20 +60,16 @@ export const problem_2_rational_inequalities = async (event) => {
  		<div id="problem-2-rational-solution-inequalities-4" style="padding:10px; font-size: 20px;"></div>
  		<div id="problem-2-rational-solution-inequalities-5" style="padding:10px; font-size: 20px;"></div>
  		<div id="problem-2-rational-solution-inequalities-6" style="padding:10px; font-size: 20px;"></div>
- 		<div id="problem-2-rational-solution-inequalities-7" style="padding:10px; font-size: 20px;"></div>
  	`);
-	} else {
- 		state = false
- 		$("problem-1-dropdown").html(`
- 			<h2>Rational inequalities</h2>
- 			<div class='dropdown-btn' id='problem-1-dropdown'>
- 				<h3>Problem 1</h3>
- 			</div> 
- 			<div class='dropdown-btn' id='problem-2-dropdown'>
- 				<h3>Problem 2</h3>
- 			</div>
- 		`);
- 	};
+ 		// $("problem-1-dropdown").html(`
+ 		// 	<h2>Rational inequalities</h2>
+ 		// 	<div class='dropdown-btn' id='problem-1-dropdown'>
+ 		// 		<h3>Problem 1</h3>
+ 		// 	</div> 
+ 		// 	<div class='dropdown-btn' id='problem-2-dropdown'>
+ 		// 		<h3>Problem 2</h3>
+ 		// 	</div>
+ 		// `);
  			
  	// write the problem inequalities 2
  	katex.render("\\frac{x-3}{x-2}-\\frac{x-5}{x-3}>0", document.getElementById("problem-2-rational-inequalities"), { throwOnError: false });
@@ -93,5 +86,5 @@ export const problem_2_rational_inequalities = async (event) => {
 
 	katex.render("\\frac{4x}{4}>\\frac{1}{4}", document.getElementById("problem-2-rational-solution-inequalities-5"), { throwOnError: false });
 
-	katex.render("x>\\frac{1}{4}", document.getElementById("problem-2-rational-solution-inequalities-5"), { throwOnError: false });
+	katex.render("x>\\frac{1}{4}", document.getElementById("problem-2-rational-solution-inequalities-6"), { throwOnError: false });
 };
