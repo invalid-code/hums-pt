@@ -163,3 +163,4 @@ cython_debug/
 firebase.json
 .firebaserc
 public
+.vercel
